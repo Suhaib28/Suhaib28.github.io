@@ -3,35 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suhaib's Portfolio Page">
     <title>Suhaib's Portfolio</title>
+
+    <style>
+        /* Styling for headers */
+        h1 {
+            font-family: 'Trebuchet MS', sans-serif; 
+            text-align: center; 
+            color: rgb(44, 37, 37);
+            font-size: 60px;
+        }
+        
+        h2, h3 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #3e98e2;
+            font-size: 30px;
+        }
+
+        /* Styling for links */
+        nav a, #hobbies a {
+            text-decoration: none;
+            color: #3e98e2;
+            font-size: 20px;
+        }
+
+        /* Navigation styling */
+        nav {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .navbar {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            font-family: 'Trebuchet MS', sans-serif;
+            color: rgb(44, 37, 37);
+            gap: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Main Header -->
     <h1>Welcome to Suhaib's Portfolio</h1>
 
+    <!-- Navigation Component -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#my-favorite-animal">Favorite Animal</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <!-- About Me Section -->
-    <section class="about-me">
+    <section id="about-me" class="about-me">
         <h2>About Me</h2>
-        <p>Hello! My name is Suhaib. I am originally from Indian and I was born UAE and raised In Saudi,
-            I'm a developer and enthusiast in various fields of technology. Welcome to my portfolio page!</p>
+        <p>Hello! My name is Suhaib. I am originally from India, born in the UAE and raised in Saudi Arabia. I'm a developer and enthusiast in various fields of technology. Welcome to my portfolio page!</p>
     </section>
 
     <!-- Goals Section -->
     <section id="goals">
         <h2>My Goals</h2>
-        <p>my primary goals is to get into WebDev and hopefully be able to acheive enough to make my parents Proud</p>
+        <p>My primary goal is to get into Web Development and hopefully achieve enough to make my parents proud!</p>
     </section>
 
+    <!-- Hobbies Section -->
     <section id="hobbies">
         <h2>What I Watch in My Free Time</h2>
         <p>Check this out <a href="https://www.mmamania.com/ufc-mma-fighter-breakdowns" target="_blank">here</a>. I really like MMA and train at least twice a week on my wrestling!</p>
     </section>
     
-    <!-- My Favorite Animal -->
+    <!-- Favorite Animal Section -->
     <div id="my-favorite-animal">
         <h2>My Favorite Animal, An Albino Tiger!</h2>
         <img src="tiggy.jpg" height="500px" width="800px" alt="My favorite animal, Tiggy">
     </div>
 
+    <!-- Contact Form -->
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <form method="post" action="#">
+            <label for="myName">*First and Last Name:</label>
+            <input type="text" id="myName" name="myName" required>
+
+            <label for="myEmail">*Email:</label>
+            <input type="email" id="myEmail" name="myEmail" required>
+
+            <label for="myPhone">Phone:</label>
+            <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>

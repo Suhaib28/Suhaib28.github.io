@@ -130,7 +130,6 @@ nav a button:hover {
     margin-bottom: 10px;
 }
 
-/* Glowing effect for Suhaib Siddiqui's Profile title */
 h1.title-suhaib {
     font-size: 40px;
     color: #ff6f61;
@@ -138,7 +137,52 @@ h1.title-suhaib {
     animation: glow 1.5s infinite alternate;
 }
 
-/* Glowing text animation */
+.about-page {
+    background-color: #1c1c1e;
+    background-image: url('images/dark-texture.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+p.intro-text {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+p, ul {
+    font-size: 16px;
+    color: #dddddd;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul.values-list li, ul.fun-facts li {
+    margin-bottom: 10px;
+}
+
+.email-link {
+    color: #ff9f91;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #ff6f61;
+}
+
 @keyframes glow {
     from {
         text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61;
@@ -148,7 +192,6 @@ h1.title-suhaib {
     }
 }
 
-/* Responsive Layout */
 @media (max-width: 800px) {
     .interest-item {
         width: 45%;

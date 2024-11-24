@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.midterm-page .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.midterm-page #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.interests-page {
+    background-color: #1c1c1e;
+    background-image: url('images/dark-texture.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+h1.title {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate;
+}
+
+#profile-picture {
+    height: auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 4px solid #ff6f61;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+#profile-picture:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+nav a button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #ff6f61;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav a button:hover {
+    background-color: #ff6f61;
+    color: black;
+    transform: scale(1.1);
+}
+
+.interests-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.interest-item {
+    width: 30%;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 111, 97, 0.8);
+}
+
+.interest-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.interest-item h3 {
+    font-size: 20px;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+/* Glowing effect for Suhaib Siddiqui's Profile title */
+h1.title-suhaib {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Glowing text animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61;
+    }
+    to {
+        text-shadow: 0 0 20px #ff9f91, 0 0 40px #ff9f91, 0 0 60px #ff9f91;
+    }
+}
+
+/* Responsive Layout */
+@media (max-width: 800px) {
+    .interest-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .interest-item {
+        width: 100%;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Suhaib's Profile</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1E2A39; 
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            color: #F3F4F6; 
+        }
+
+        .container {
+            width: 750px;
+            background-color: #2C3E50; 
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 38px;
+            color: #E67E22; 
+            margin-bottom: 20px;
+        }
+
+        #profile-picture {
+            height: 300px;
+            width: auto;
+            border-radius: 15px;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #E67E22;
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a button {
+            background-color: #E74C3C; 
+            width: 150px;
+            height: 45px;
+            border-radius: 22px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        nav a:hover button {
+            background-color: #C0392B; 
+            transform: scale(1.05);
+        }
+
+        #about {
+            background-color: #34495E; 
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #F1C40F; 
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Suhaib's Profile</h1>
+        <img src="contain_tiggy.jpg" id="profile-picture" alt="Profile Picture">
+
+        <nav>
+            <a href="#about"><button>About</button></a>
+            <a href="#"><button>Goals</button></a>
+            <a href="#"><button>Contact</button></a>
+        </nav>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Suhaib. I am passionate about learning and have a unique hobby of mastering languages. As of now, I can speak, read, and write in 5 languages! In my free time, I enjoy working out and trying my hand at wrestling. I aim to become a skilled full-stack developer and, most importantly, make my parents proud through my achievements.</p>
+        </section>
+    </div>
+</body>
+</html>
